@@ -2,8 +2,6 @@
 Video's manager Project
 """
 
-
-
 import json
 
 def load_data():

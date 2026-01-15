@@ -13,3 +13,12 @@ class Car:
 car01 = Car("Tata", "Nexon")
 print(car01.company)
 print(car01.model)
+
+# A class is a blueprint / template
+# An object is a real instance created from a class
+
+# def __init__(self, company, model):
+
+# Called automatically when object is created
+# Used to initialize data
+# self refers to the current object

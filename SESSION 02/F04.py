@@ -7,6 +7,7 @@ it private, and provide a getter method for it.
 
 class Car:
     def __init__(self, company, model):
+        # Python renames private variables
         self.__company = company
         self.model = model
     

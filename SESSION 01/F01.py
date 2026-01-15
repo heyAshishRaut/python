@@ -32,7 +32,7 @@ Movie tickets are priced based on age $12 for adults (18 and above)
 # age = int(input("Enter age - "))
 # day = input("Enter day - ").lower()
 
-# price = 0;
+# price = 0
 
 # if (age >= 1 and age < 18) :
 #     price = 8
@@ -139,49 +139,49 @@ for "extra shot" of espresso
 # if boolExtraShot:
 #     print("Coffee size - ", size, " with extra shot of Espresso")
 # else:
-#     print("Coffe size - ", size, " with no extra shot of Espresso")
+#     print("Coffee size - ", size, " with no extra shot of Espresso")
 
 """
 08
 Password Checker
 """
 
-# password = input("Enter password - ")
+password = input("Enter password - ")
 
-# strength = {
-# "capital" : False,
-# "small" : False,
-# "number" : False,
-# "special" : False,
-# "length" : False
-# }
+strength = {
+"capital" : False,
+"small" : False,
+"number" : False,
+"special" : False,
+"length" : False
+}
 
-# if(len(password) > 8):
-#     strength["length"] = True
+if(len(password) > 8):
+    strength["length"] = True
 
-# for ch in password:
-#     if ch.isupper():
-#         strength["capital"] = True
+for ch in password:
+    if ch.isupper():
+        strength["capital"] = True
 
-#     if ch.islower():
-#         strength["small"] = True
+    if ch.islower():
+        strength["small"] = True
 
-#     if ch in "@#$%^&*!":
-#         strength["special"] = True
+    if ch in "@#$%^&*!":
+        strength["special"] = True
 
-#     if ch.isdigit():
-#         strength["number"] = True
+    if ch.isdigit():
+        strength["number"] = True
 
-# count = 0
+count = 0
 
-# criteria_met = sum(strength.values())
+criteria_met = sum(strength.values()) # sum([True, False, True, True, False]) = 3
 
-# if(criteria_met == 5):
-#     print("Strength - Strong")
-# elif(criteria_met >= 3):
-#     print("Strength - Moderate")
-# else:
-#     print("Strength - Weak")
+if(criteria_met == 5):
+    print("Strength - Strong")
+elif(criteria_met >= 3):
+    print("Strength - Moderate")
+else:
+    print("Strength - Weak")
 
 """
 09

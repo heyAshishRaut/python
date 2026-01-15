@@ -50,12 +50,12 @@ Multiplication table printer
 Reverse a string
 """
 
-# str = input("Enter a string - ")
-# ans = ""
+str = input("Enter a string - ")
+ans = ""
 
-# for ch in range(len(str) - 1, -1, -1):
-#     ans = ans + str[ch]
-# print(ans)
+for ch in range(len(str) - 1, -1, -1):
+    ans = ans + str[ch]
+print(ans)
 
 
 """

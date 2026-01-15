@@ -4,10 +4,10 @@ Baics function syntax
 Write a function to calculate and return the square of a number
 """
 
-# def calSquare(num):
-#     return num * num
+def calSquare(num):
+    return num * num
 
-# print(calSquare(4))
+print(calSquare(4))
 
 """
 02
@@ -40,12 +40,12 @@ Create a function that returns both area and circumferences of a
 circle given its radius
 """
 
-# import math
-# def areaAndCircum(radius):
-#     return math.pi * (radius ** 2), 2 * math.pi * radius 
+import math
+def areaAndCircum(radius):
+    return math.pi * (radius ** 2), 2 * math.pi * radius 
 
-# area, circumference = areaAndCircum(5)
-# print("Area - ", round(area, 2), " and Circumference - ", round(circumference, 2))
+area, circumference = areaAndCircum(5)
+print("Area - ", round(area, 2), " and Circumference - ", round(circumference, 2))
 
 """
 05
@@ -75,15 +75,17 @@ Write a function that takes variable number of arguments and
 return their sum
 """
 
-# def sumAll(*args):
-#     # cal = 0
-#     # for i in args:
-#     #     cal = cal + i
-#     # return cal
-#     return sum(args)
+# *args = variable number of positional arguments (stored as tuple)
 
-# ans = sumAll(1, 2, 3, 4, 5)
-# print(ans)
+def sumAll(*args):
+    # cal = 0
+    # for i in args:
+    #     cal = cal + i
+    # return cal
+    return sum(args)
+
+ans = sumAll(1, 2, 3, 4, 5)
+print(ans)
 
 """
 08
@@ -91,6 +93,8 @@ Function with **kwargs
 Create a function that accepts anny number of keywords argument
 and print them in key - value format
 """
+
+# **kwargs is a dictionary
 
 # def printKwargs(**kwargs):
 #     for key, value in kwargs.items():
@@ -104,6 +108,8 @@ Generator function with yield
 Write a generator function that yields even numbers up to a
 specified limits
 """
+
+# yield returns values one by one and remembers where it stopped
 
 # def printEven(limit):
 #     for i in range(2, limit + 1, 2):
